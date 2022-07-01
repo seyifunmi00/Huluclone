@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap");
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+html,
+body {
+   font-family: "Rubik", sans-serif;
+   background: #000;
+   color: #fff;
+   line-height: 1.7;
+   overflow-x: hidden;
+}
+a {
+   color: #fff;
+   text-decoration: none;
+}
+a:hover {
+   color: #ccc;
+}
+ul {
+   list-style: none;
+   text-decoration: none;
+}
+img {
+   width: 100%;
+}
+.header {
+   height: 93vh;
+    box-shadow: inset 60px 40px 160px #000000, inset -60px -40px -160px #000000;
+   background: url(../img/header.jpg) no-repeat center center/cover;
+}
+.header nav {
+   max-width: 90%;
+   display: flex;
+   justify-content: space-between;
+   margin: 0 auto;
+   padding-top: 2rem;
+}
+nav img {
+   width: 70px;
+}
+.header nav .login-btn {
+   cursor: pointer;
+   background: none;
+   border: none;
+   color: #fff;
+   font-weight: bold;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   transition: all 0.5s ease-in;
+}
+.header nav .login-btn:hover {
+   background: #333;
+   padding: 7px 10px;
+   text-align: center;
+   border-radius: 15%;
+}
+.header .header-content img {
+   width: 700px;
+   margin-bottom: 2rem;
+}
+.header .header-content {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 50%;
+   margin: 6rem auto 0;
+}
+.header .header-content h4, .tow-row h4{
+   font-size: 0.8rem;
+   font-weight: bolder;
+   margin-bottom: 0.8rem;
+   color: #1CE783;
+}
+.header .header-content .btn {
+   width: 680px;
+   padding: 0.8rem 0;
+   color: #000;
+   background: #1CE783;
+   border: none;
+   font-size: 0.8rem;
+   font-weight: bolder;
+   margin-top: 0.8rem;
+   margin-bottom: 1.7rem;
+   letter-spacing: 2px;
+}
+.header .header-content .btn:hover{
+  opacity:0.7;
+}
+.header .header-content .header-text-1{
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+.header .header-content a{
+  text-decoration: underline;
+}
+.container{
+  width:95%;
+  margin:3rem auto;
+}
+.top-row h4, .bottom h4{
+   font-size: 0.8rem;
+   font-weight: bolder;
+   margin-bottom: 0.8rem;
+   color: #1CE783;
+}
+.container-inner{
+  width:70%;
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.container-inner h1, .bottom h1{
+  font-size: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.container-inner p{
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 1.7rem;
+}
+.bottom-row{
+  margin:auto;
+  width:90%;
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  grid-gap:2rem;
+}
+.bottom-row img{
+  background: rgba(0,0,0,0.5);
+}
+.bottom{
+   width:50%;
+   display: flex;
+   flex-direction: column;
+   margin:8rem auto 3rem;
+   justify-content: center;
+   align-items: center;
+}
+.bottom .larger{
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 1.7rem;
+  text-align: center;
+}
+.bottom p{
+   font-size: 10px;
+}
+.bottom a{
+   text-decoration: underline;
+   margin-top: 1rem;
+   cursor: pointer;
+}
+.sports{
+   background: url(../img/live-sports.jpg) no-repeat center center/cover;
+   margin-top: 5rem;
+       box-shadow: inset 30px 10px 80px #000000, inset -30px -10px -80px #000000;
+}
+.sports-inner{
+   width:40%;
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   margin:3rem 12rem 3rem;
+   padding:5rem 0;
+}
+
+.sports .sports-inner img{
+   width:4rem;
+   background: #fff;
+   padding: 0.7rem;
+   border-radius: 80%;
+   margin-right: 15px;
+}
+.sports-inner .larger{
+   font-size: 20px;
+   font-weight: bolder;
+   margin-bottom: 1.6rem;
+   letter-spacing:2;
+}
+.sports-inner h1{
+   font-size: 3rem;
+   margin-bottom: 0.7rem;
+}
+.sports-inner .small{
+   font-size: 16px;
+   margin-bottom: 1rem;
+}
+.sports-inner .smaller{
+   font-size: 10px;
+   margin-bottom: 1rem;
+   font-weight: bolder;
+}
+.sports-inner .smaller a{
+   text-decoration: underline;
+}
+.sports-images{
+   margin-bottom: 0.7rem;
+}
+/* media queries */
+@media(max-width: 720px){
+  nav img{
+    width:70px;
+  }
+  .header .header-content img {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.header .header-content {
+   width: 80%;
+   margin-top: 10rem;
+}
+.header .header-content h4 {
+    font-size: 0.8rem;
+    font-weight: bolder;
+    margin-bottom: 0.7rem;
+}
+.header .header-content .header-text-1 {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+.header .header-content .btn {
+    width: 95%;
+    padding: 0.5rem 0;
+    color: #000;
+    background: #1CE783;
+    border: none;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    margin-top: 0.5rem;
+    margin-bottom: 1.2rem;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+.header .header-content a {
+    font-size: 0.8rem;
+}
+.header{
+   height:75vh;
+}
+.bottom-row{
+  margin:auto;
+  width:100%;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-gap:2rem;
+}
+.container-inner h1, .bottom h1{
+  font-size: 1.5rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.7rem;
+}
+.container-inner p{
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.bottom .larger{
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+.bottom p{
+   font-size: 8px;
+   text-align: center;
+}
+.bottom a{
+   text-decoration: underline;
+   margin-top: 0.6rem;
+   font-size: 10px;
+}
+.bottom{
+   width:90%;
+   margin-top: 4rem;
+}
+.sports{
+   background: url(../img/live-sports-small.jpg) no-repeat center center/cover;
+   margin-top: 5rem;
+       box-shadow: inset 30px 10px 80px #000000, inset -30px -10px -80px #000000;
+       height:50vh;
+}
+.sports-inner{
+   width:80%;
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin:1.7rem auto;
+   padding:5rem 0;
+   text-align: center;
+}
+
+.sports .sports-inner img{
+   width:2.5rem;
+   background: #fff;
+   padding: 0.5rem;
+   border-radius: 80%;
+   margin-right: 15px;
+}
+.sports-inner .larger{
+   font-size: 20px;
+   font-weight: bolder;
+   margin-bottom: 1rem;
+   letter-spacing:2;
+}
+.sports-inner h1{
+   font-size: 2.5rem;
+   margin-bottom: 0.5rem;
+}
+.sports-inner .small{
+   font-size: 12px;
+   margin-bottom: 0.7rem;
+}
+.sports-inner .smaller{
+   font-size: 07px;
+   margin-bottom: 1rem;
+   font-weight: bolder;
+}
+.sports-inner .smaller a{
+   text-decoration: underline;
+}
+.sports-images{
+   margin-bottom: 0.7rem;
+}
+}
